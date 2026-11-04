@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar Ofertas Brasil — Rastreador Inteligente de Preços & Ofertas Tech</title>
+  <meta name="description" content="Monitoramento autônomo e em tempo real dos melhores preços e descontos nos maiores e-commerces do Brasil (Mercado Livre, Amazon, Magalu, Kabum). Atualizado a cada 6h.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='m4.93 4.93 4.24 4.24'/><path d='m14.83 9.17 4.24-4.24'/><path d='m14.83 14.83 4.24 4.24'/><path d='m9.17 14.83-4.24 4.24'/></svg>">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857'
+            },
+            surface: {
+              50: '#18181b',
+              100: '#27272a',
+              200: '#3f3f46',
+              900: '#09090b',
+              950: '#040405'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background: rgba(24, 24, 27, 0.75); backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-surface-950 text-zinc-100 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-surface-100/80 glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-emerald-700 flex items-center justify-center shadow-lg shadow-brand-500/20">
+          <i data-lucide="radar" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-zinc-200 to-brand-400 bg-clip-text text-transparent">Radar Ofertas Pro</span>
+          <span class="hidden sm:inline-block ml-2 px-2 py-0.5 text-[10px] font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/20 rounded-full">100% Autônomo</span>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/GabrielHFGoncalez/radar-ofertas-brasil" target="_blank" class="hidden md:flex items-center gap-2 text-xs text-zinc-400 hover:text-white transition px-3 py-1.5 rounded-lg border border-surface-100 hover:border-zinc-700">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+        <button onclick="openApiModal()" class="flex items-center gap-2 text-xs font-medium text-zinc-300 hover:text-white bg-surface-100 hover:bg-surface-200 px-3 py-1.5 rounded-lg border border-zinc-700 transition">
+          <i data-lucide="code" class="w-4 h-4 text-brand-400"></i>
+          <span>API / JSON</span>
+        </button>
+        <button onclick="openPixModal()" class="flex items-center gap-2 text-xs font-semibold text-white bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-500 hover:to-emerald-500 px-3.5 py-1.5 rounded-lg shadow-md shadow-brand-500/20 transition active:scale-95">
+          <i data-lucide="heart" class="w-4 h-4 fill-white"></i>
+          <span>Apoiar via Pix</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="border-b border-surface-100/60 bg-gradient-to-b from-surface-900/40 via-surface-950 to-surface-950 py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="update-badge">Radar ativo • Atualizado hoje</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+        Os Melhores Preços do E-commerce <span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Rastreados em Tempo Real</span>
+      </h1>
+      <p class="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto mb-8">
+        Scraper autônomo que monitora ofertas, quedas de preço e estoque no Mercado Livre, Amazon e principais varejistas brasileiros. Sem intermediários, direto na fonte.
+      </p>
+
+      <!-- Key Metrics Counter -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
+        <div class="bg-surface-50/60 border border-surface-100 rounded-xl p-3 text-center">
+          <span class="block text-xl font-bold text-white" id="stat-total-deals">--</span>
+          <span class="text-[11px] text-zinc-400">Ofertas Monitoradas</span>
+        </div>
+        <div class="bg-surface-50/60 border border-surface-100 rounded-xl p-3 text-center">
+          <span class="block text-xl font-bold text-emerald-400" id="stat-lowest-price">--</span>
+          <span class="text-[11px] text-zinc-400">Menor Preço Ativo</span>
+        </div>
+        <div class="bg-surface-50/60 border border-surface-100 rounded-xl p-3 text-center">
+          <span class="block text-xl font-bold text-white">6 Categorias</span>
+          <span class="text-[11px] text-zinc-400">Tecnologia & Games</span>
+        </div>
+        <div class="bg-surface-50/60 border border-surface-100 rounded-xl p-3 text-center">
+          <span class="block text-xl font-bold text-brand-400">A cada 6 horas</span>
+          <span class="text-[11px] text-zinc-400">Ciclo de Varredura</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls & Search -->
+  <main class="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row gap-4 items-center justify-between mb-8">
+      <!-- Search Input -->
+      <div class="relative w-full md:w-96">
+        <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400"></i>
+        <input type="text" id="search-input" placeholder="Buscar por modelo, marca, specs..." class="w-full pl-10 pr-4 py-2 bg-surface-50 border border-surface-100 rounded-xl text-sm text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-brand-500 transition">
+      </div>
+
+      <!-- Sorting Select -->
+      <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+        <label for="sort-select" class="text-xs text-zinc-400 whitespace-nowrap">Ordenar por:</label>
+        <select id="sort-select" class="bg-surface-50 border border-surface-100 rounded-xl px-3 py-2 text-xs text-zinc-300 focus:outline-none focus:border-brand-500 transition">
+          <option value="price-asc">Menor Preço</option>
+          <option value="price-desc">Maior Preço</option>
+          <option value="title-asc">Nome (A - Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none" id="category-tabs">
+      <button class="cat-tab active px-4 py-2 rounded-xl text-xs font-medium bg-brand-500 text-white shadow-sm transition whitespace-nowrap" data-cat="all">
+        Todas as Ofertas (<span id="count-all">0</span>)
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Notebooks & Laptops">
+        💻 Notebooks
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Smartphones & Celulares">
+        📱 Smartphones
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Placas de Vídeo (GPUs)">
+        ⚡ Placas de Vídeo (GPUs)
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Smart TVs">
+        📺 Smart TVs
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Monitores Gamer">
+        🖥️ Monitores Gamer
+      </button>
+      <button class="cat-tab px-4 py-2 rounded-xl text-xs font-medium bg-surface-50 hover:bg-surface-100 text-zinc-300 border border-surface-100 transition whitespace-nowrap" data-cat="Consoles & Games">
+        🎮 Consoles & Games
+      </button>
+    </div>
+
+    <!-- Deals Grid -->
+    <div id="deals-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <!-- Loading Skeleton -->
+      <div class="col-span-full py-16 text-center text-zinc-400">
+        <i data-lucide="loader-2" class="w-8 h-8 animate-spin mx-auto mb-3 text-brand-400"></i>
+        <p class="text-sm">Carregando feed de ofertas em tempo real...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-surface-100/60 bg-surface-950 py-8 px-4 text-center text-xs text-zinc-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Radar Ofertas Brasil • Construído e Operado de Forma 100% Autônoma por Agente IA</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/GabrielHFGoncalez" target="_blank" class="hover:text-zinc-300 transition">GitHub @GabrielHFGoncalez</a>
+        <span>•</span>
+        <button onclick="openPixModal()" class="text-brand-400 hover:underline">Doar via Pix</button>
+        <span>•</span>
+        <button onclick="openApiModal()" class="hover:text-zinc-300 transition">API para Devs</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Pix -->
+  <div id="pix-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-surface-50 border border-surface-100 rounded-2xl max-w-md w-full p-6 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      <button onclick="closePixModal()" class="absolute right-4 top-4 text-zinc-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center mb-5">
+        <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="coffee" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white">Apoie o Radar com um Pix</h3>
+        <p class="text-xs text-zinc-400 mt-1">Sua contribuição mantém os scrapers rodando na nuvem 24/7 sem anúncios invasivos.</p>
+      </div>
+
+      <div class="bg-white p-3 rounded-xl max-w-[200px] mx-auto mb-4 shadow-inner">
+        <img id="pix-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=99f7b8c7-6dcc-494a-ab2f-fa39c51f4bcd" alt="QR Code Pix" class="w-full h-auto block">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-[11px] font-medium text-zinc-400 mb-1.5 text-center">Chave Pix Aleatória Oficial:</label>
+        <div class="flex items-center gap-2 bg-surface-100 border border-surface-200 rounded-xl p-2">
+          <input type="text" readonly value="99f7b8c7-6dcc-494a-ab2f-fa39c51f4bcd" id="pix-key-input" class="bg-transparent text-xs text-zinc-200 w-full focus:outline-none font-mono">
+          <button onclick="copyPixKey()" class="px-3 py-1.5 bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg shrink-0 transition flex items-center gap-1.5">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>Copiar</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center text-[11px] text-zinc-500">
+        Beneficiário: <strong class="text-zinc-300">GABRIEL</strong> • Cidade: <strong class="text-zinc-300">SÃO PAULO</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal API B2B -->
+  <div id="api-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-surface-50 border border-surface-100 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+      <button onclick="closeApiModal()" class="absolute right-4 top-4 text-zinc-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-brand-500/10 border border-brand-500/20 text-brand-400 rounded-xl flex items-center justify-center">
+          <i data-lucide="terminal" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-white">API & Feed JSON de Ofertas</h3>
+          <p class="text-xs text-zinc-400">Integre os preços no seu bot de Telegram, canal do WhatsApp ou comparador.</p>
+        </div>
+      </div>
+
+      <div class="space-y-3 mb-5 text-xs text-zinc-300">
+        <p>Você pode consumir o feed atualizado diretamente via requisição HTTP GET aberta:</p>
+        <div class="bg-surface-950 p-3 rounded-xl border border-surface-100 font-mono text-[11px] text-emerald-400 break-all select-all">
+          GET https://raw.githubusercontent.com/GabrielHFGoncalez/radar-ofertas-brasil/main/data/live_deals_feed.json
+        </div>
+        <p class="text-zinc-400">
+          Para webhook diário em tempo real ou integração personalizada, envie R$ 29/mês para a chave Pix e envie comprovante para ativação da cota dedicada.
+        </p>
+      </div>
+
+      <div class="flex gap-2">
+        <a href="data/live_deals_feed.json" target="_blank" download class="flex-1 py-2 text-center text-xs font-semibold bg-surface-100 hover:bg-surface-200 border border-zinc-700 rounded-xl text-white transition">
+          Baixar JSON Local
+        </a>
+        <button onclick="closeApiModal(); openPixModal();" class="flex-1 py-2 text-center text-xs font-semibold bg-brand-500 hover:bg-brand-600 rounded-xl text-white transition">
+          Assinar Feed B2B via Pix
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-brand-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-xl shadow-brand-500/30 transition transform translate-y-20 opacity-0 pointer-events-none flex items-center gap-2">
+    <i data-lucide="check" class="w-4 h-4"></i>
+    <span id="toast-msg">Chave copiada com sucesso!</span>
+  </div>
+
+  <!-- Application Logic -->
+  <script>
+    let allDeals = [];
+    let currentCategory = 'all';
+
+    async function loadDeals() {
+      try {
+        const res = await fetch('data/live_deals_feed.json?t=' + Date.now());
+        if (!res.ok) throw new Error('Failed to load JSON');
+        const data = await res.json();
+        allDeals = data.deals || [];
+        
+        // Update stats
+        document.getElementById('stat-total-deals').innerText = allDeals.length;
+        document.getElementById('count-all').innerText = allDeals.length;
+        
+        if (allDeals.length > 0) {
+          const minPrice = Math.min(...allDeals.map(d => d.price));
+          document.getElementById('stat-lowest-price').innerText = 'R$ ' + minPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+        }
+        
+        if (data.last_updated) {
+          const dt = new Date(data.last_updated);
+          document.getElementById('update-badge').innerText = 'Radar ativo • ' + dt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) + ' de ' + dt.toLocaleDateString('pt-BR');
+        }
+        
+        renderDeals();
+      } catch (err) {
+        console.warn('Fallback loading error:', err);
+        document.getElementById('deals-grid').innerHTML = `
+          <div class="col-span-full py-12 text-center">
+            <p class="text-sm text-red-400">Falha ao carregar o feed ao vivo. Tentando sincronização de contingência...</p>
+          </div>
+        `;
+      }
+    }
+
+    function renderDeals() {
+      const grid = document.getElementById('deals-grid');
+      const search = document.getElementById('search-input').value.toLowerCase().trim();
+      const sort = document.getElementById('sort-select').value;
+
+      let filtered = allDeals.filter(d => {
+        const matchesCat = (currentCategory === 'all' || d.category === currentCategory);
+        const matchesSearch = !search || d.title.toLowerCase().includes(search) || d.category.toLowerCase().includes(search);
+        return matchesCat && matchesSearch;
+      });
+
+      if (sort === 'price-asc') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sort === 'price-desc') {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sort === 'title-asc') {
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center text-zinc-500">
+            <i data-lucide="package-x" class="w-10 h-10 mx-auto mb-2 opacity-50"></i>
+            <p class="text-sm font-medium">Nenhum produto encontrado com os filtros atuais.</p>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => `
+        <article class="bg-surface-50 border border-surface-100 hover:border-brand-500/50 rounded-2xl p-4 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-500/5 group">
+          <div>
+            <div class="relative w-full h-44 bg-surface-100 rounded-xl overflow-hidden mb-3.5 flex items-center justify-center p-2">
+              <img src="${item.image_url}" alt="${item.title}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&auto=format&fit=crop&q=60'">
+              <span class="absolute top-2.5 left-2.5 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-surface-950/80 backdrop-blur-md text-zinc-300 border border-surface-100">
+                ${item.category.split('&')[0].trim()}
+              </span>
+            </div>
+
+            <h3 class="text-xs font-semibold text-zinc-200 line-clamp-2 leading-snug group-hover:text-brand-400 transition mb-2" title="${item.title}">
+              ${item.title}
+            </h3>
+
+            ${item.rating ? `
+              <div class="flex items-center gap-1 text-[11px] text-amber-400 mb-2">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i>
+                <span class="font-medium">${item.rating}</span>
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="pt-3 border-t border-surface-100/60 mt-2">
+            <div class="flex items-baseline justify-between mb-3">
+              <div>
+                <span class="text-[10px] text-zinc-500 block uppercase">Melhor Oferta</span>
+                <span class="text-lg font-extrabold text-emerald-400">${item.price_str}</span>
+              </div>
+              <span class="text-[10px] font-medium text-emerald-400/90 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                Verificado
+              </span>
+            </div>
+
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-1.5 py-2 px-3 text-xs font-semibold bg-surface-100 hover:bg-brand-500 text-zinc-200 hover:text-white rounded-xl transition shadow-sm group/btn">
+              <span>Ir para a Loja</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 text-zinc-400 group-hover/btn:text-white transition"></i>
+            </a>
+          </div>
+        </article>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    // Category Tabs Logic
+    document.querySelectorAll('.cat-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cat-tab').forEach(t => {
+          t.classList.remove('bg-brand-500', 'text-white');
+          t.classList.add('bg-surface-50', 'text-zinc-300');
+        });
+        tab.classList.add('bg-brand-500', 'text-white');
+        tab.classList.remove('bg-surface-50', 'text-zinc-300');
+        currentCategory = tab.getAttribute('data-cat');
+        renderDeals();
+      });
+    });
+
+    document.getElementById('search-input').addEventListener('input', renderDeals);
+    document.getElementById('sort-select').addEventListener('change', renderDeals);
+
+    // Modals
+    function openPixModal() {
+      document.getElementById('pix-modal').classList.remove('hidden');
+      document.getElementById('pix-modal').classList.add('flex');
+    }
+    function closePixModal() {
+      document.getElementById('pix-modal').classList.add('hidden');
+      document.getElementById('pix-modal').classList.remove('flex');
+    }
+    function openApiModal() {
+      document.getElementById('api-modal').classList.remove('hidden');
+      document.getElementById('api-modal').classList.add('flex');
+    }
+    function closeApiModal() {
+      document.getElementById('api-modal').classList.add('hidden');
+      document.getElementById('api-modal').classList.remove('flex');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    function copyPixKey() {
+      const key = document.getElementById('pix-key-input').value;
+      navigator.clipboard.writeText(key);
+      showToast('Chave Pix copiada com sucesso!');
+    }
+
+    // Init
+    loadDeals();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
