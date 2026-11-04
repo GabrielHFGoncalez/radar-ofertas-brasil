@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "last_updated": "2026-11-04T16:47:40.382061+00:00",
-  "total_deals": 44,
+  "last_updated": "2026-11-04T22:58:55.229716+00:00",
+  "total_deals": 43,
   "categories": [
     "Notebooks & Laptops",
     "Smartphones & Celulares",
@@ -21,19 +21,19 @@
       "url": "https://www.buscape.com.br/lead?oid=1578116400&channel=86&index=7&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://image.zst.com.br/228A27DED5D68E75ABEB00C2E816FCFB_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.064385+00:00"
+      "updated_at": "2026-11-04T22:58:51.714548+00:00"
     },
     {
       "id": "notebook_2",
       "category": "Notebooks & Laptops",
       "category_slug": "notebook",
       "title": "Notebook Acer Aspire GO Intel Core i5 13420H 15,6\" 8GB SSD 256GB Windows 11 AG15-71P-5939",
-      "price_str": "R$ 3.778,19",
-      "price": 3778.19,
+      "price_str": "R$ 3.699,00",
+      "price": 3699.0,
       "url": "https://www.buscape.com.br/notebook/notebook-acer-aspire-go-ag15-71p-5939-intel-core-i5-13420h-15-8gb-ssd-256-gb-windows-11?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://i.zst.com.br/thumbs/45/3e/2e/-1590644197.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.064532+00:00"
+      "updated_at": "2026-11-04T22:58:51.714683+00:00"
     },
     {
       "id": "notebook_3",
@@ -45,19 +45,19 @@
       "url": "https://www.buscape.com.br/lead?oid=1578116379&channel=86&index=2&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://image.zst.com.br/C69A4B579DC9B3F68606DA511EA2DF50_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.064661+00:00"
+      "updated_at": "2026-11-04T22:58:51.714787+00:00"
     },
     {
       "id": "notebook_4",
       "category": "Notebooks & Laptops",
       "category_slug": "notebook",
       "title": "Notebook Dell Inspiron 15 3530 Intel i5 1334U 15,6\" 8GB SSD 512GB Windows 11 i15-i1300-A30",
-      "price_str": "R$ 3.999,00",
-      "price": 3999.0,
+      "price_str": "R$ 4.999,00",
+      "price": 4999.0,
       "url": "https://www.buscape.com.br/notebook/notebook-dell-inspiron-i15-i1300-a30-intel-core-i5-1334u-15-6-8gb-ssd-512-gb-windows-11?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://i.zst.com.br/thumbs/45/26/34/-1626976359.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.064771+00:00"
+      "updated_at": "2026-11-04T22:58:51.715001+00:00"
     },
     {
       "id": "notebook_5",
@@ -69,19 +69,19 @@
       "url": "https://www.buscape.com.br/lead?oid=1562724630&channel=86&index=1&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://image.zst.com.br/81A162C842FCA70C9D7B69331C4A3509_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.065161+00:00"
+      "updated_at": "2026-11-04T22:58:51.715182+00:00"
     },
     {
       "id": "notebook_6",
       "category": "Notebooks & Laptops",
       "category_slug": "notebook",
-      "title": "Notebook Asus Vivobook Go Ryzen 5-7520U 15,6\" 8GB SSD 256GB Linux E1504FA-NJ731",
-      "price_str": "R$ 2.903,12",
-      "price": 2903.12,
-      "url": "https://www.buscape.com.br/notebook/notebook-asus-vivobook-go-e1504fa-nj731-amd-ryzen-5-7520u-15-6-8gb-ssd-256-gb-linux?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
-      "image_url": "https://i.zst.com.br/thumbs/45/2d/f/-1314834945.jpg",
+      "title": "Notebook Lenovo IdeaPad Slim 3i Intel Core i5 13420H 15,3\" 8GB SSD 512GB Windows 11 83NS0002BR",
+      "price_str": "R$ 3.870,63",
+      "price": 3870.63,
+      "url": "https://www.buscape.com.br/notebook/notebook-lenovo-ideapad-83ns0002br-intel-core-i5-13420h-15-8gb-ssd-512-gb-windows-11?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
+      "image_url": "https://i.zst.com.br/thumbs/45/7/36/-1570173401.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.065283+00:00"
+      "updated_at": "2026-11-04T22:58:51.715371+00:00"
     },
     {
       "id": "notebook_7",
@@ -90,22 +90,22 @@
       "title": "Samsung Galaxy Book3 360 Intel® Core™ i5-1335U, Windows 11 Home, 8 GB, 256 GB SSD, 13.3\" Full HD AMOLED, 1.16 kg*",
       "price_str": "R$ 4.139,10",
       "price": 4139.1,
-      "url": "https://www.buscape.com.br/lead?oid=1579403341&channel=86&index=3&experiencevariant=cro-12-2&searchterm=notebook",
+      "url": "https://www.buscape.com.br/lead?oid=1579403341&channel=86&index=4&experiencevariant=cro-12-2&searchterm=notebook",
       "image_url": "https://image.zst.com.br/9A027204D43421266993741E04076237_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.065413+00:00"
+      "updated_at": "2026-11-04T22:58:51.715455+00:00"
     },
     {
       "id": "notebook_8",
       "category": "Notebooks & Laptops",
       "category_slug": "notebook",
-      "title": "Notebook Lenovo IdeaPad Slim 3i Intel Core i5 13420H 15,3\" 8GB SSD 512GB Windows 11 83NS0002BR",
-      "price_str": "R$ 3.871,12",
-      "price": 3871.12,
-      "url": "https://www.buscape.com.br/notebook/notebook-lenovo-ideapad-83ns0002br-intel-core-i5-13420h-15-8gb-ssd-512-gb-windows-11?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
-      "image_url": "https://i.zst.com.br/thumbs/45/7/36/-1570173401.jpg",
+      "title": "Notebook Acer Aspire GO 15 Intel Core i7-13620H 15,6\" 16GB SSD 512GB Linux AG15-71P-747N",
+      "price_str": "R$ 6.119,10",
+      "price": 6119.1,
+      "url": "https://www.buscape.com.br/notebook/notebook-acer-aspire-go-ag15-71p-747n-intel-core-i7-13620h-15-6-16gb-ssd-512-gb-linux?_lc=88&experiencevariant=cro-12-2&searchterm=notebook",
+      "image_url": "https://i.zst.com.br/thumbs/45/13/11/-1618709202.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.065533+00:00"
+      "updated_at": "2026-11-04T22:58:51.715657+00:00"
     },
     {
       "id": "smartphone_1",
@@ -117,7 +117,7 @@
       "url": "https://www.buscape.com.br/celular/celular-apple-iphone-17-256gb?_lc=88&experiencevariant=cro-12-2&searchterm=smartphone",
       "image_url": "https://i.zst.com.br/thumbs/45/15/19/-1584053110.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.620451+00:00"
+      "updated_at": "2026-11-04T22:58:52.304930+00:00"
     },
     {
       "id": "smartphone_2",
@@ -129,7 +129,7 @@
       "url": "https://www.buscape.com.br/celular/celular-xiaomi-pocophone-poco-x7-256gb-8-gb?_lc=88&experiencevariant=cro-12-2&searchterm=smartphone",
       "image_url": "https://i.zst.com.br/thumbs/45/1b/1d/-1448497225.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:37.620575+00:00"
+      "updated_at": "2026-11-04T22:58:52.305042+00:00"
     },
     {
       "id": "smartphone_3",
@@ -141,7 +141,7 @@
       "url": "https://www.buscape.com.br/celular/celular-samsung-galaxy-s25-5g-256gb-12-gb?_lc=88&experiencevariant=cro-12-2&searchterm=smartphone",
       "image_url": "https://i.zst.com.br/thumbs/45/37/3b/-1449465281.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:37.620676+00:00"
+      "updated_at": "2026-11-04T22:58:52.305130+00:00"
     },
     {
       "id": "smartphone_4",
@@ -153,7 +153,7 @@
       "url": "https://www.buscape.com.br/celular/celular-samsung-galaxy-a17-256gb-8-gb?_lc=88&experiencevariant=cro-12-2&searchterm=smartphone",
       "image_url": "https://i.zst.com.br/thumbs/45/16/30/-1584401187.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:37.620978+00:00"
+      "updated_at": "2026-11-04T22:58:52.305466+00:00"
     },
     {
       "id": "smartphone_5",
@@ -165,7 +165,7 @@
       "url": "https://www.buscape.com.br/celular/smartphone-samsung-galaxy-s24-5g-256gb?_lc=88&experiencevariant=cro-12-2&searchterm=smartphone",
       "image_url": "https://i.zst.com.br/thumbs/45/3d/11/-1202542340.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:37.621276+00:00"
+      "updated_at": "2026-11-04T22:58:52.305733+00:00"
     },
     {
       "id": "placa-de-video_1",
@@ -177,67 +177,67 @@
       "url": "https://www.buscape.com.br/lead?oid=1572315139&channel=86&index=1&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/F87ED65EA45807A3F676063979B8EB0E_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.144488+00:00"
+      "updated_at": "2026-11-04T22:58:53.393880+00:00"
     },
     {
       "id": "placa-de-video_2",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
       "title": "Placa de Vídeo ASRock RX 7600 Challenger PRO OC AMD Radeon, 8GB, GDDR6, Triple Fan - 90-GA62ZZ-00UANF",
-      "price_str": "R$ 2.051,99",
-      "price": 2051.99,
+      "price_str": "R$ 1.999,99",
+      "price": 1999.99,
       "url": "https://www.buscape.com.br/lead?oid=1531696127&channel=86&index=1&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/04A118A6C65DC5F313A6DD5A2FF4E271_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145045+00:00"
+      "updated_at": "2026-11-04T22:58:53.394419+00:00"
     },
     {
       "id": "placa-de-video_3",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
-      "title": "Placa de Vídeo ASRock Radeon RX 9070 XT Challenger, AMD, 16GB - 90-GA61ZZ-00UANF",
-      "price_str": "R$ 6.288,99",
-      "price": 6288.99,
-      "url": "https://www.buscape.com.br/lead?oid=1561762422&channel=86&index=2&experiencevariant=cro-12-2&searchterm=placa-de-video",
-      "image_url": "https://image.zst.com.br/84B972A15FB0AA8FA092D1F34344E641_375_375.jpg",
+      "title": "Placa de Vídeo ASRock RX 9060 XT SL 16GO AMD Radeon, 16GB, GDDR6, 128b",
+      "price_str": "R$ 3.388,22",
+      "price": 3388.22,
+      "url": "https://www.buscape.com.br/lead?oid=1561959948&channel=86&index=2&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "image_url": "https://image.zst.com.br/01E2E3CFAEA81A9485743D3382DC0AC7_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145169+00:00"
+      "updated_at": "2026-11-04T22:58:53.394522+00:00"
     },
     {
       "id": "placa-de-video_4",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
-      "title": "Placa de Vídeo ASRock RX 9060 XT SL 16GO AMD Radeon, 16GB, GDDR6, 128b",
-      "price_str": "R$ 3.388,22",
-      "price": 3388.22,
-      "url": "https://www.buscape.com.br/lead?oid=1561959948&channel=86&index=3&experiencevariant=cro-12-2&searchterm=placa-de-video",
-      "image_url": "https://image.zst.com.br/01E2E3CFAEA81A9485743D3382DC0AC7_375_375.jpg",
+      "title": "Placa de Vídeo Nvidia PcYes RTX 5060 TI 16GB GDDR7 128BITS DUAL FAN PVRTX5060TIB2F16G",
+      "price_str": "R$ 5.154,99",
+      "price": 5154.99,
+      "url": "https://www.buscape.com.br/lead?oid=1581576192&channel=86&index=3&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "image_url": "https://image.zst.com.br/650793A74CB39615DF5C324D29FFAA53_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145283+00:00"
+      "updated_at": "2026-11-04T22:58:53.394619+00:00"
     },
     {
       "id": "placa-de-video_5",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
-      "title": "Placa de Vídeo Nvidia PcYes RTX 5060 TI 16GB GDDR7 128BITS DUAL FAN PVRTX5060TIB2F16G",
-      "price_str": "R$ 5.154,99",
-      "price": 5154.99,
-      "url": "https://www.buscape.com.br/lead?oid=1581576192&channel=86&index=4&experiencevariant=cro-12-2&searchterm=placa-de-video",
-      "image_url": "https://image.zst.com.br/650793A74CB39615DF5C324D29FFAA53_375_375.jpg",
+      "title": "Placa de Vídeo RX 7600 Challenger ASRock AMD Radeon, 8GB GDDR6 - 90-GA",
+      "price_str": "R$ 1.899,99",
+      "price": 1899.99,
+      "url": "https://www.buscape.com.br/lead?oid=1571071373&channel=86&index=4&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "image_url": "https://image.zst.com.br/F954E408FBBAF138EE906F5040E32DC9_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145415+00:00"
+      "updated_at": "2026-11-04T22:58:53.394713+00:00"
     },
     {
       "id": "placa-de-video_6",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
-      "title": "Placa de Vídeo RX 7600 Challenger ASRock AMD Radeon, 8GB GDDR6 - 90-GA",
-      "price_str": "R$ 1.979,99",
-      "price": 1979.99,
-      "url": "https://www.buscape.com.br/lead?oid=1571071373&channel=86&index=6&experiencevariant=cro-12-2&searchterm=placa-de-video",
-      "image_url": "https://image.zst.com.br/F954E408FBBAF138EE906F5040E32DC9_375_375.jpg",
+      "title": "Placa de Vídeo Radeon RX 9060 XT Challenger OC 16GB GDDR6 128-bit 90-GA5QZZ-00UANF Asrock",
+      "price_str": "R$ 4.455,74",
+      "price": 4455.74,
+      "url": "https://www.buscape.com.br/lead?oid=1566004085&channel=86&index=7&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "image_url": "https://image.zst.com.br/8F4E96FC12B140BC9FFBE57A03305B2C_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145523+00:00"
+      "updated_at": "2026-11-04T22:58:53.394805+00:00"
     },
     {
       "id": "placa-de-video_7",
@@ -249,7 +249,7 @@
       "url": "https://www.buscape.com.br/lead?oid=1562650867&channel=86&index=1&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/1D9A24A08800B6BD1077E4E9212EA0ED_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145628+00:00"
+      "updated_at": "2026-11-04T22:58:53.394912+00:00"
     },
     {
       "id": "placa-de-video_8",
@@ -261,7 +261,7 @@
       "url": "https://www.buscape.com.br/lead?oid=1480317557&channel=86&index=2&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/9BEFFAB2FA4E0C54DFC41082584CC604_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145732+00:00"
+      "updated_at": "2026-11-04T22:58:53.395006+00:00"
     },
     {
       "id": "placa-de-video_9",
@@ -273,7 +273,7 @@
       "url": "https://www.buscape.com.br/lead?oid=1563629443&channel=86&index=3&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/1E1BB53459752DFC1B4DD931845EBECB_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145835+00:00"
+      "updated_at": "2026-11-04T22:58:53.395100+00:00"
     },
     {
       "id": "placa-de-video_10",
@@ -285,7 +285,7 @@
       "url": "https://www.buscape.com.br/lead?oid=1561962806&channel=86&index=4&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/20846237B2C3E2FB4905C4566F0E58CE_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.145942+00:00"
+      "updated_at": "2026-11-04T22:58:53.395195+00:00"
     },
     {
       "id": "placa-de-video_11",
@@ -294,22 +294,22 @@
       "title": "Placa de Vídeo Nvidia PcYes RTX 4060 GDDR6 8GB 128BITS FULL SIZE DUAL FAN - PVR40608GR6DF2",
       "price_str": "R$ 2.399,99",
       "price": 2399.99,
-      "url": "https://www.buscape.com.br/lead?oid=1581656423&channel=86&index=17&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "url": "https://www.buscape.com.br/lead?oid=1581656423&channel=86&index=18&experiencevariant=cro-12-2&searchterm=placa-de-video",
       "image_url": "https://image.zst.com.br/2DB442969B236DBB8E9F09FD2A5FBE3A_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.146047+00:00"
+      "updated_at": "2026-11-04T22:58:53.395289+00:00"
     },
     {
       "id": "placa-de-video_12",
       "category": "Placas de Vídeo (GPUs)",
       "category_slug": "placa-de-video",
-      "title": "GIGABYTE GeForce RTX 5060 Ti WINDFORCE 8G",
-      "price_str": "R$ 5.382,00",
-      "price": 5382.0,
-      "url": "https://www.buscape.com.br/lead?oid=1492204229&channel=86&index=1&experiencevariant=cro-12-2&searchterm=placa-de-video",
-      "image_url": "https://image.zst.com.br/0A35DA3FC9573210689CEBFE0F260F51_375_375.jpg",
+      "title": "Placa de Vídeo RTX 5060 Ti WINDFORCE 8G Gigabyte NVIDIA GeForce, 8GB G",
+      "price_str": "R$ 3.199,99",
+      "price": 3199.99,
+      "url": "https://www.buscape.com.br/lead?oid=1578198305&channel=86&index=1&experiencevariant=cro-12-2&searchterm=placa-de-video",
+      "image_url": "https://image.zst.com.br/67D3634637A503C52BCEF231155F279C_375_375.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.146140+00:00"
+      "updated_at": "2026-11-04T22:58:53.395381+00:00"
     },
     {
       "id": "smart-tv_1",
@@ -321,7 +321,7 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-43-britania-btv43va4regb-roku-tv?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://i.zst.com.br/thumbs/45/3b/30/-1448913080.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.817409+00:00"
+      "updated_at": "2026-11-04T22:58:53.896816+00:00"
     },
     {
       "id": "smart-tv_2",
@@ -333,7 +333,7 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-led-32-samsung-h5000f?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://i.zst.com.br/thumbs/45/12/36/-1528868736.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.817664+00:00"
+      "updated_at": "2026-11-04T22:58:53.897049+00:00"
     },
     {
       "id": "smart-tv_3",
@@ -345,7 +345,7 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-qled-50-tcl-4k-p7k?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://i.zst.com.br/thumbs/45/35/29/-1531912434.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.817894+00:00"
+      "updated_at": "2026-11-04T22:58:53.897239+00:00"
     },
     {
       "id": "smart-tv_4",
@@ -357,22 +357,10 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-dled-32-aoc-32s5155?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://i.zst.com.br/thumbs/45/13/3b/-1629683004.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.818092+00:00"
+      "updated_at": "2026-11-04T22:58:53.897331+00:00"
     },
     {
       "id": "smart-tv_5",
-      "category": "Smart TVs",
-      "category_slug": "smart-tv",
-      "title": "Smart TV LED 50 LG 4K 50AU801C0SA",
-      "price_str": "R$ 2.299,90",
-      "price": 2299.9,
-      "url": "https://www.buscape.com.br/tv/smart-tv-led-50-lg-4k-50au801c0sa?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
-      "image_url": "https://i.zst.com.br/thumbs/45/1/10/-1643306870.jpg",
-      "rating": null,
-      "updated_at": "2026-11-04T16:47:38.818215+00:00"
-    },
-    {
-      "id": "smart-tv_6",
       "category": "Smart TVs",
       "category_slug": "smart-tv",
       "title": "Smart TV 43\" LG 4K 43NU850BPSA",
@@ -381,10 +369,10 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-43-lg-4k-43nu850bpsa?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://image.zst.com.br/F89ADB71B737A7A59F2176B3D9C34D72_235_235.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.818343+00:00"
+      "updated_at": "2026-11-04T22:58:53.897589+00:00"
     },
     {
-      "id": "smart-tv_7",
+      "id": "smart-tv_6",
       "category": "Smart TVs",
       "category_slug": "smart-tv",
       "title": "Smart TV LED 32\" HQ HQS32NKHM",
@@ -393,19 +381,19 @@
       "url": "https://www.buscape.com.br/tv/smart-tv-led-32-hq?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
       "image_url": "https://i.zst.com.br/thumbs/45/36/2f/-1421311540.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:38.818552+00:00"
+      "updated_at": "2026-11-04T22:58:53.897765+00:00"
     },
     {
-      "id": "smart-tv_8",
+      "id": "smart-tv_7",
       "category": "Smart TVs",
       "category_slug": "smart-tv",
-      "title": "Smart TV QLED 50\" TCL 4K 50P7L",
-      "price_str": "R$ 2.279,05",
-      "price": 2279.05,
-      "url": "https://www.buscape.com.br/tv/smart-tv-qled-50-tcl-4k-50p7l?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
-      "image_url": "https://i.zst.com.br/thumbs/45/3f/19/-1716255912.jpg",
+      "title": "Smart TV LED 50 LG 4K 50AU801C0SA",
+      "price_str": "R$ 2.299,90",
+      "price": 2299.9,
+      "url": "https://www.buscape.com.br/tv/smart-tv-led-50-lg-4k-50au801c0sa?_lc=88&experiencevariant=cro-12-2&searchterm=smart-tv",
+      "image_url": "https://i.zst.com.br/thumbs/45/1/10/-1643306870.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:38.818677+00:00"
+      "updated_at": "2026-11-04T22:58:53.897873+00:00"
     },
     {
       "id": "monitor-gamer_1",
@@ -417,7 +405,7 @@
       "url": "https://www.buscape.com.br/monitor/monitor-gamer-alienware-32-4k-qd-oled-aw3225qf-monitor-gamer-alienware-32-4k-qd-oled-aw3225qf?_lc=88&experiencevariant=cro-12-2&searchterm=monitor-gamer",
       "image_url": "https://i.zst.com.br/thumbs/45/23/17/-1224588705.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:39.586732+00:00"
+      "updated_at": "2026-11-04T22:58:54.569691+00:00"
     },
     {
       "id": "monitor-gamer_2",
@@ -429,7 +417,7 @@
       "url": "https://www.buscape.com.br/monitor/monitor-gamer-qhd-27-curva-asus-qhd-vg279qm5a?_lc=88&experiencevariant=cro-12-2&searchterm=monitor-gamer",
       "image_url": "https://i.zst.com.br/thumbs/45/3e/35/-1727206801.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:39.587218+00:00"
+      "updated_at": "2026-11-04T22:58:54.570133+00:00"
     },
     {
       "id": "monitor-gamer_3",
@@ -441,7 +429,7 @@
       "url": "https://www.buscape.com.br/monitor/monitor-gamer-qled-34-curva-tcl-wqhd-34r83q?_lc=88&experiencevariant=cro-12-2&searchterm=monitor-gamer",
       "image_url": "https://i.zst.com.br/thumbs/45/15/11/-1682102075.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:39.587640+00:00"
+      "updated_at": "2026-11-04T22:58:54.570476+00:00"
     },
     {
       "id": "monitor-gamer_4",
@@ -453,7 +441,7 @@
       "url": "https://www.buscape.com.br/monitor/monitor-gamer-va-32-curva-samsung-qhd-odyssey-g5-ls32cg552?_lc=88&experiencevariant=cro-12-2&searchterm=monitor-gamer",
       "image_url": "https://i.zst.com.br/thumbs/45/29/f/-1564945041.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:39.587964+00:00"
+      "updated_at": "2026-11-04T22:58:54.570750+00:00"
     },
     {
       "id": "console-de-video-game_1",
@@ -465,7 +453,7 @@
       "url": "https://www.buscape.com.br/console-de-video-game/pre-venda-console-playstation-5-slim-1-tb-sony-1214a-4k?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/1d/b/-1202927867.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:40.380744+00:00"
+      "updated_at": "2026-11-04T22:58:55.228560+00:00"
     },
     {
       "id": "console-de-video-game_2",
@@ -477,19 +465,19 @@
       "url": "https://www.buscape.com.br/console-de-video-game/console-playstation-5-slim-825gb-sony-4k?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/2d/16/-1617879576.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:40.380882+00:00"
+      "updated_at": "2026-11-04T22:58:55.228679+00:00"
     },
     {
       "id": "console-de-video-game_3",
       "category": "Consoles & Games",
       "category_slug": "console-de-video-game",
       "title": "Nintendo Switch 2 256GB",
-      "price_str": "R$ 4.098,90",
-      "price": 4098.9,
+      "price_str": "R$ 4.139,90",
+      "price": 4139.9,
       "url": "https://www.buscape.com.br/console-de-video-game/console-switch-2-com-joy-con-nintendo?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/22/3e/-1508394776.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:40.381001+00:00"
+      "updated_at": "2026-11-04T22:58:55.228790+00:00"
     },
     {
       "id": "console-de-video-game_4",
@@ -501,7 +489,7 @@
       "url": "https://www.buscape.com.br/console-de-video-game/console-xbox-series-s-microsoft?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/3b/11/-989661276.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:40.381459+00:00"
+      "updated_at": "2026-11-04T22:58:55.229177+00:00"
     },
     {
       "id": "console-de-video-game_5",
@@ -513,7 +501,7 @@
       "url": "https://www.buscape.com.br/console-de-video-game/console-playstation-5-2-tb-sony-pro-4k?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/30/39/-1347358260.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:40.381559+00:00"
+      "updated_at": "2026-11-04T22:58:55.229263+00:00"
     },
     {
       "id": "console-de-video-game_6",
@@ -525,7 +513,7 @@
       "url": "https://www.buscape.com.br/console-de-video-game/console-playstation-5-825-gb-sony-bundle-ea-sports-fc-24-4k?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/26/3d/-1147399814.jpg",
       "rating": null,
-      "updated_at": "2026-11-04T16:47:40.381871+00:00"
+      "updated_at": "2026-11-04T22:58:55.229529+00:00"
     },
     {
       "id": "console-de-video-game_7",
@@ -537,7 +525,7 @@
       "url": "https://www.buscape.com.br/console-de-video-game/console-playstation-5-sony?_lc=88&experiencevariant=cro-12-2&searchterm=console-de-video-game",
       "image_url": "https://i.zst.com.br/thumbs/45/35/35/1929775863.jpg",
       "rating": "",
-      "updated_at": "2026-11-04T16:47:40.381970+00:00"
+      "updated_at": "2026-11-04T22:58:55.229623+00:00"
     }
   ]
 }
